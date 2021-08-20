@@ -10,7 +10,8 @@ var formvalid = {
 
 //Functions for checking validation 
 function checkvalidation(){
-    if(formvalid.username, formvalid.placename, formvalid.mobilename, formvalid.messagename, formvalid.emailname){
+    console.log(formvalid.username, formvalid.placename, formvalid.mobilename, formvalid.messagename, formvalid.emailname)
+    if(formvalid.username && formvalid.placename && formvalid.mobilename && formvalid.messagename && formvalid.emailname){
         $('#submit-btn').removeAttr('disabled');
     } else {
         $('#submit-btn').attr('disabled', true);
@@ -27,9 +28,10 @@ $('#name').on('input',function(){
 
     
     if(username.length<1){
-        $('#name-error').text('Character is required.').show();
         formvalid.username = false;
         checkvalidation();
+        $('#name-error').text('Character is required.').show();
+       
     } else {
        hide();
        formvalid.username = true;

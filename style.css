@@ -1,4 +1,20 @@
 #name-error{
     color: red;
-    
 }
+
+#mobile-error{
+    color: red;
+}
+
+#email-error{
+    color: red;
+}
+
+#message-error{
+    color: red;
+}
+
+#place-error{
+    color: red;
+}
+
