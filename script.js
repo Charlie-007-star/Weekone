@@ -1,5 +1,6 @@
 // for form validation
 var formvalid = {
+
     username: false,
     placename: false,
     mobilename: false,
@@ -9,6 +10,7 @@ var formvalid = {
 };
 
 //Functions for checking validation 
+
 function checkvalidation(){
     console.log(formvalid.username, formvalid.placename, formvalid.mobilename, formvalid.messagename, formvalid.emailname)
     if(formvalid.username && formvalid.placename && formvalid.mobilename && formvalid.messagename && formvalid.emailname){
@@ -170,6 +172,8 @@ $('#message').on('input',function(){
     }
 });
 
+
+
 // email 
 $('#email').on('input',function(){
     var emailname = $(this).val();
@@ -201,3 +205,10 @@ $('#email').on('input',function(){
 
 
 })
+
+
+
+
+
+
+ 

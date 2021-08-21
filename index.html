@@ -8,7 +8,8 @@
     <link rel="icon" href="https://scontent.fmaa1-3.fna.fbcdn.net/v/t1.6435-9/c0.0.1066.1066a/s851x315/65930419_2319848598272814_4384813918728486912_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=da31f3&_nc_ohc=KXiD4DSJ6B0AX_EujCP&tn=m-8Nc0ZEN6dSFRAv&_nc_ht=scontent.fmaa1-3.fna&oh=b4f1694ab1cafd00dc5e03113d6085f3&oe=6130AC4B" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
    
     <link rel="stylesheet" href="style.css">
 </head>
@@ -211,7 +212,7 @@
             <h1 class="text-center">Contact me</h1>
             <div class="row">
                 <div class="col-md-12">
-                <form id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbwyfmzjKpBfd9W7eldr7CgBcxYqmzfqdJgpqtnO/exec">
+                <form id="gform" action="">
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputEmail4">Name</label>
@@ -288,17 +289,18 @@
 
     
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>  -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
+<!-- Ajax function for form submission -->
 <script>
-  $("#submit-form").submit((e)=>{
+   $("#gform").submit((e)=>{
       e.preventDefault()
       $.ajax({
-          url:"",
-          data:$("#submit-form").serialize(),
+          url:"https://script.google.com/macros/s/AKfycbwyfmzjKpBfd9W7eldr7CgBcxYqmzfqdJgpqtnO/exec",
+          data:$("#gform").serialize(),
           method:"post",
           success:function (response){
               alert("Form submitted successfully")
@@ -312,5 +314,6 @@
       })
   })
 </script>
+
 </body>
 </html>
