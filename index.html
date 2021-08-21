@@ -41,6 +41,9 @@
                             <a class="nav-link text-white" href="#experience-section">Experience</a>
                           </li>
                           <li class="nav-item">
+                            <a class="nav-link text-white" href="#skills-section">Skills</a>
+                          </li>
+                          <li class="nav-item">
                             <a class="nav-link text-white" href="#contact-section">Contact us</a>
                           </li>
                        </ul>
@@ -199,6 +202,39 @@
         </div>
     </section>
 
+    <!-- Skills section -->
+    <section id="skills-section">
+      <div class="container">
+      <div class="jumbotron">
+        <h1 style="text-align: center;">Skills</h1>
+          <h2 id="lang">Jquery</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br>
+          <h2 id="lang">JavaScript</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br>
+          <h2 id="lang">Bootstrap</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br>
+          <h2 id="lang">CSS</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br>
+          <h2 id="lang">HTML</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+      </div>
+      </div> 
+    </section>
+
     <!-- conatact me section -->
     <section class="p-5 bg-white" id="contact-section">
         <div class="container">
@@ -209,12 +245,12 @@
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputEmail4">Name</label>
-                        <input type="text" class="form-control" autocomplete="off" name="name" id="name" maxlength="20" placeholder="Enter your name" oninput="this.value=this.value.replace(/[^A-Za-z]|^ /g,'')" >
+                        <input type="text" class="form-control" autocomplete="off" name="name" id="name" maxlength="20" placeholder="Enter your name" oninput="this.value=this.value.replace(/[^A-Za-z ]|^ /g,'')" >
                         <p id="name-error"></p>
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputPassword4">Place</label>
-                        <input type="text" class="form-control" id="place" autocomplete="off" name="place" maxlength="15" placeholder="Enter the place" oninput="this.value=this.value.replace(/[^A-Za-z]|^ /g,'')">
+                        <input type="text" class="form-control" id="place" autocomplete="off" name="place" maxlength="15" placeholder="Enter the place" oninput="this.value=this.value.replace(/[^A-Za-z ]|^ /g,'')">
                         <p id="place-error"></p>
                       </div>
                     </div>

@@ -36,8 +36,8 @@ $('#name').on('input',function(){
        hide();
        formvalid.username = true;
        checkvalidation();
-        var testExp= new RegExp(/^[a-zA-Z\s]+$/);
-        var testEx= new RegExp(/^[a-zA-Z]+$/);
+        var testExp= new RegExp(/^[a-zA-Z ]+$/);
+        var testEx= new RegExp(/^[a-zA-Z ]+$/);
         if (!testExp.test(username)){
             $('#name-error').text('Must not have any special character or number.').show();
             formvalid.username = false;
@@ -85,8 +85,8 @@ $('#place').on('input',function(){
         placehide();
         formvalid.placename =true;
         checkvalidation();
-        var testplace = new RegExp(/^[a-zA-Z\s]+$/);
-        var testplac = new RegExp(/^[a-zA-Z]+$/);
+        var testplace = new RegExp(/^[a-zA-Z ]+$/);
+        var testplac = new RegExp(/^[a-zA-Z ]+$/);
         if(!testplace.test(placename)){
             $('#place-error').text('Must not have any special character or number.').show();
             formvalid.placename = false;
