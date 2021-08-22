@@ -12,7 +12,7 @@ var formvalid = {
 //Functions for checking validation 
 
 function checkvalidation(){
-    console.log(formvalid.username, formvalid.placename, formvalid.mobilename, formvalid.messagename, formvalid.emailname)
+  
     if(formvalid.username && formvalid.placename && formvalid.mobilename && formvalid.messagename && formvalid.emailname){
         $('#submit-btn').removeAttr('disabled');
     } else {
@@ -171,8 +171,6 @@ $('#message').on('input',function(){
         }
     }
 });
-
-
 
 // email 
 $('#email').on('input',function(){
